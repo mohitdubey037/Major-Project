@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ///////////////////////HEADER////////////////////// */
+
+header {
+    display: flex;
+}
+
+.logo-parent {
+    width: 70%;
+}
+
+.logo-parent img {
+    width: 150px;
+}
+
+.header-links{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-links a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+.company--icon{
+    margin-left: 3px;
+    height: 28px;
+    font-size: 22px;
+    position: absolute;
+}
+
+.company__link:hover + .header_company-child {
+    display: block;
+}
+
+.fa.fa-user {
+    font-size: 50px;
+    margin-left: 9px;
+}
+
+/*//////////////////////////// SECTION CONTENT//////////////////// */
+
+.features-section {
+    margin-top: 40px;
+}
+
+.features-section h1 {
+    font: bold 1.87rem 'Poppins', sans-serif;
+    color: #666666;
+    text-align: center;
+    letter-spacing: 0.625rem;
+}
+
+.professional-input {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+select {
+    border-radius: 8px;
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#places {
+    background-color: rgba(173, 162, 162, 0.788);
+    width: 12%;
+    font: bold 15px 'Poppins', sans-serif ;
+}
+
+.find-professionals {
+    border: 1px solid black;
+    width: 56%;
+    margin-left: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 1px 3px 1px;
+    padding: 20px 0px;
+}
+
+.find-professionals input {
+    height: 100%;
+    width: 90%;
+    margin-left: 20px;
+    border: none;
+    font-size: 23px;
+}
+
+input[type=text]:focus, select:focus {
+    outline: none;
+}
+
+.fa.fa-search {
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+.find-professionals input::placeholder {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.building-image {
+    margin-top: 32px;
+    text-align: center;
+    opacity: 0.3;
+    filter: blur(5px);
+}
+
+.building-image img {
+    width: 90%;
+}
+
+/*/////////////////////// HOVER CONTENT/////////////////*/ 
+
+body {
+    position: relative;
+}
+
+.header_company-child {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-around;
+    text-align: center;
+    width: 160px;
+    height: 210px;
+    border: 2px solid black;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 62%);
+    top: 54px;
+    right: 170px;
+    border-radius: 8px;
+}
+
+.header_company-child {
+    /* display: none; */
+}
+
+.header_company-child a {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.hover-content {
+    position: absolute;
+    left: 400px;
+    width: 56%;
+    height: 16%;
+    top: 310px;
+    display: grid;
+    grid-template-rows: 185px 170px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    justify-content: center;
+
+}
+
+.hover-content div div {
+    display: grid;
+    justify-content: center;
+    color: black;
+}
+
+.hover-content div div h4 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hover-content .interior-designers__parent .interior-designer__child h4{
+    margin-top: 10px;
+}
+
+.hover-content .architects__parent .architect__child h4 {
+    margin-top: 23px;
+}
+
+.hover-content .contractors__parent .contractors__child h4 {
+    margin-top: 17px;
+}
+/*///////////////////////////////// SECTION SECOND ////////////////////*/
+
+.description {
+    margin-top: 70px;
+}
+
+.key-features, .your-way, .professional_account-parent {
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 7px;
+    opacity: 0.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon-parent {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: auto;
+    margin-top: 40px;
+    width: 100%;
+    padding: 0px 90px;
+    height: 60%;
+}
+
+.icon-parent > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fa.fa-pencil-square-o, .fa.fa-link, .fa.fa-mobile, #usericon2 {
+    font-size: 80px;
+}
+
+.port, .project, .construction, .mobile-etracking {
+    height: 140px;
+}
+
+.portfolio, .project-child, .construction-child {
+    width: 197px;
+    font-weight: bold;
+}
+
+.e-tracking{
+    width: 160px;
+    font-weight: bold;
+}
+
+.profile-detail {
+    display: inline-block;
+    margin-top: 30px;
+    width: 100%;
+    height:530px;
+    background-color: lightsteelblue;
+}
+
+.your-way {
+    margin: 80px 0px 30px 0px;
+}
+
+.simple-step {
+    color: darkorange;
+}
+
+.professional_account-parent {
+    margin-top: 45px;
+}
+
+.user-verification__status {
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    padding: 0px 80px;
+    margin-top: 36px;
+}
+
+.user-verification__status div {
+    border: 2px solid black;
+    width: 240px;
+    position: relative;
+    border-radius: 12px;
+}
+
+.user-verification__status a {
+    position: absolute;
+    top: 200px;
+    color: black;
+    font-weight: bold;
+}
+
+#pencil, .fa.fa-check-circle, .fas.fa-user-tie, .fa.fa-users {
+    position: absolute;
+    top: 80px;
+    left: 94px;
+    font-size: xxx-large;
+}
+
+.create-profile a, .get-verified a {
+    left: 31%;
+}
+
+.build-portfolio a, .get-clients a {
+    left: 21%;
+}
+
+.create-button {
+    margin-top: 40px;
+    text-align: center;
+    left: 45%;
+    position: absolute;
+    font-weight: bold;
+}
+
+.create {
+    background-color: #ffb547;
+    padding: 11px 27px 11px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.fas.fa-arrow-alt-circle-right {
+    position: absolute;
+    right: 8px;
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0rem;
+    height: 17rem;
+    width: 100%;
+    margin-top: 30vh;
+    background-color: rgb(133, 130, 130);
+}
+
+.footer::before{
+    content:"";
+    position: absolute;
+    background-color: #686868;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(90% 81%, 100% 1%, 100% 100%, 0% 100%);
+}
+
+.footer-children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer-children a {
+    color: #e6d5d5;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer-statement p {
+    color: #e6d5d5;
+    font-size: 20px;
+    margin-top: 10px;
+}
